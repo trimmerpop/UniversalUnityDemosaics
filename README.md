@@ -75,7 +75,10 @@ Put it on plugins folder(BepInEx \ plugins) and run game, config file is created
     You can dump materials/shaders names to file. If once used, The value is changed to "false". 
 
 
+
+
 Changes Log
+
 v1.4.4.0
     Config file's location is moved to BepInEx/Config folder.
     
