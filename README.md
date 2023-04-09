@@ -29,7 +29,7 @@ Tested on
 
 May be works on other unity games. And It makes little bit frame drop.
 
-Put it on plugins folder(BepInEx \ plugins) and run game, config file is created on plugins folder. It's like
+Put it on plugins folder(BepInEx \ plugins) and run game, config file is created on BepInEx/Config folder. It's like
 
     [Config]
 
