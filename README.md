@@ -80,29 +80,36 @@ Put it on plugins folder(BepInEx \ plugins) and run game, config file is created
 Changes Log
 
 v1.4.4.0
+
     Config file's location is moved to BepInEx/Config folder.
     
 v1.4.3.0
+
     Support more old unity version. (working on unity v4.5.5)
     Removed "maximumLOD". It's value is constant -2..
     New "ForceRemoveFilter" config. Force to remove material/shader what matches it. (same use way with "FilterStrings")
     New "NameDumpMode" config. It can dump materials/shaders names to "DumbRendererDemosaic.csv" file.(append mode)
 
 v1.4.2.6
+
     Removed "ScanType" in setting file
     Removed "LoopTimeLimit" in setting file.
     Added "UseUnlitMaterial" in setting file.
     Fixed a bug repeat remove shader what has been removed.
 
 v1.4.2.5
+
     Change the find method of "Unlit shader". (check shader's name contains "cubism")
 
 v1.4.2.4
+
     Renderer index management changed. Reset "check index" on changes on Renderer.
 
 v1.4.2.3
+
     Sometime not working at screen change.
     Fix error on Gallery to Title screen. (when Renderers counts changed nnn to 0)
 
 v1.4.2.2
+
     debug little bit bug. It's appeared on Lord Knight Complex. H-scene with monster is no problem. but just dress off on alone, demosaic not works.
