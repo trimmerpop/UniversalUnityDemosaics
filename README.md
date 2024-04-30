@@ -18,9 +18,7 @@ It's plugin for BepInEx. So need BepInEx.
 
 
 About IL2CPP version of BepInEx
-Recently, BepInEx Bleeding Edge (BE) builds release #6xx versions. But #6xx version is not compatible with BepInEx plugins(5.x ver).
-Use #533.
-Or use BepInEx 6.0.0-pre.1
+Bleeding Edge builds #6xx ( https://builds.bepinex.dev/projects/bepinex_be )
 
 Tested on
     IL2CPP : Holy Knight Ricca, Succubus Heaven, AiKagura
