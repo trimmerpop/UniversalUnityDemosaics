@@ -13,6 +13,7 @@
     <OutputPath>..\bin\</OutputPath>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>$(DefineConstants);interop</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -20,12 +21,116 @@
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DefineConstants>$(DefineConstants);interop</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BepInEx.IL2CPP" Version="6.0.0-*" IncludeAssets="compile" />
-    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
-    <PackageReference Include="Il2CppReferenceLibs.Core" Version="2.0.0" />
+    <Compile Include="..\DumbRendererDemosaic\DumbRendererDemosaic.cs" Link="DumbRendererDemosaic.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\Lib\BE6 imterop\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver">
+      <HintPath>..\Lib\BE6 imterop\AsmResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.DotNet">
+      <HintPath>..\Lib\BE6 imterop\AsmResolver.DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.PE">
+      <HintPath>..\Lib\BE6 imterop\AsmResolver.PE.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.PE.File">
+      <HintPath>..\Lib\BE6 imterop\AsmResolver.PE.File.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetRipper.VersionUtilities">
+      <HintPath>..\Lib\BE6 imterop\AssetRipper.VersionUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Core">
+      <HintPath>..\Lib\BE6 imterop\BepInEx.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader.Core">
+      <HintPath>..\Lib\BE6 imterop\BepInEx.Preloader.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.Common">
+      <HintPath>..\Lib\BE6 imterop\BepInEx.Unity.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP">
+      <HintPath>..\Lib\BE6 imterop\BepInEx.Unity.IL2CPP.dll</HintPath>
+    </Reference>
+    <Reference Include="Cpp2IL.Core">
+      <HintPath>..\Lib\BE6 imterop\Cpp2IL.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Disarm">
+      <HintPath>..\Lib\BE6 imterop\Disarm.dll</HintPath>
+    </Reference>
+    <Reference Include="Gee.External.Capstone">
+      <HintPath>..\Lib\BE6 imterop\Gee.External.Capstone.dll</HintPath>
+    </Reference>
+    <Reference Include="Iced">
+      <HintPath>..\Lib\BE6 imterop\Iced.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common">
+      <HintPath>..\Lib\BE6 imterop\Il2CppInterop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Generator">
+      <HintPath>..\Lib\BE6 imterop\Il2CppInterop.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.HarmonySupport">
+      <HintPath>..\Lib\BE6 imterop\Il2CppInterop.HarmonySupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\Lib\BE6 imterop\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\Lib\BE6 imterop\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\Lib\BE6 imterop\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\Lib\BE6 imterop\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="LibCpp2IL">
+      <HintPath>..\Lib\BE6 imterop\LibCpp2IL.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\Lib\BE6 imterop\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\Lib\BE6 imterop\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\Lib\BE6 imterop\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\Lib\BE6 imterop\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>..\Lib\BE6 imterop\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>..\Lib\BE6 imterop\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="SemanticVersioning">
+      <HintPath>..\Lib\BE6 imterop\SemanticVersioning.dll</HintPath>
+    </Reference>
+    <Reference Include="StableNameDotNet">
+      <HintPath>..\Lib\BE6 imterop\StableNameDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\Lib\BE6 imterop\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Lib\BE6 imterop\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\Lib\BE6 imterop\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WasmDisassembler">
+      <HintPath>..\Lib\BE6 imterop\WasmDisassembler.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <Import Project="..\DemozaicCommon\DemozaicCommon.projitems" Label="Shared" />
