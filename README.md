@@ -79,6 +79,11 @@ Put it on plugins folder(BepInEx \ plugins) and run game, config file is created
 
 Changes Log
 
+v1.4.5.0
+
+    Fixed plugin hide issue. (over Unity 2021.3)
+    Optimized for game speed. (slow decenesor process)
+
 v1.4.4.0
 
     Config file's location is moved to BepInEx/Config folder.
