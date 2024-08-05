@@ -47,9 +47,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\BE5\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="0Harmony20">
-      <HintPath>..\Lib\BE5\0Harmony20.dll</HintPath>
-    </Reference>
     <Reference Include="BepInEx">
       <HintPath>..\Lib\BE5\BepInEx.dll</HintPath>
     </Reference>
@@ -85,12 +82,6 @@
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\BE5\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\Lib\BE5\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\Lib\BE5\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="..\DemozaicCommon\DemozaicCommon.projitems" Label="Shared" />

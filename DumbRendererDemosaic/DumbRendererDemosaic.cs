@@ -9,6 +9,8 @@ using BepInEx.Configuration;
 using System.IO;
 using System.Collections.Generic;
 
+
+
 #if interop
 using Il2CppInterop.Runtime;
 using Il2CppInterop.Runtime.Injection;
@@ -50,7 +52,6 @@ namespace DumbRendererDemosaic
         TimeSpan LoopTimeLimit = new TimeSpan(0, 0, 0, 0, 1);
         static DateTime? next_check = null;
         static TimeSpan check_span = new TimeSpan(0, 0, 0, 2);
-
 
         internal static DumbRendererDemosaic Instance { get; private set; }
         public static void Setup()
@@ -135,15 +136,17 @@ namespace DumbRendererDemosaic
             }
             MozaicTools.Init_MosaicNameParts(FilterStrings.Value);
             MozaicTools.Init_MosaicNameParts_ForceRemove(ForceRemoveFilter.Value);
+
         }
 
         void OnGUI()
         {
             //Logger.Log(LogLevel.Info, $"Test RenderIndex {RenderIndex}");
-            if (OldSceneId == null || OldSceneId != Application.loadedLevel)
+            int scene = Application.loadedLevel;
+            if (OldSceneId == null || OldSceneId != scene)
             {
                 next_check = null;
-                OldSceneId = Application.loadedLevel;
+                OldSceneId = scene;
                 return;
             }
 
@@ -216,7 +219,7 @@ namespace DumbRendererDemosaic
                                             Renderers[RenderIndex].sharedMaterial.DisableKeyword("_ALPHATEST_ON");
                                             Renderers[RenderIndex].sharedMaterial.DisableKeyword("_ALPHABLEND_ON");
                                             Renderers[RenderIndex].sharedMaterial.EnableKeyword("_ALPHAPREMULTIPLY_ON");
-                                            Renderers[RenderIndex].sharedMaterial.renderQueue = (int)RenderQueue.Transparent;
+                                            //Renderers[RenderIndex].sharedMaterial.renderQueue = (int)RenderQueue.Transparent;
                                             Renderers[RenderIndex].sharedMaterial.color = new Color(material.color.r, material.color.g, material.color.b, 0.00001f);
                                         }
                                         else
@@ -235,7 +238,7 @@ namespace DumbRendererDemosaic
                                             Renderers[RenderIndex].material.DisableKeyword("_ALPHATEST_ON");
                                             Renderers[RenderIndex].material.DisableKeyword("_ALPHABLEND_ON");
                                             Renderers[RenderIndex].material.EnableKeyword("_ALPHAPREMULTIPLY_ON");
-                                            Renderers[RenderIndex].material.renderQueue = (int)RenderQueue.Transparent;
+                                            //Renderers[RenderIndex].material.renderQueue = (int)RenderQueue.Transparent;
                                             Renderers[RenderIndex].material.color = new Color(material.color.r, material.color.g, material.color.b, 0.00001f);
                                         }
                                         else

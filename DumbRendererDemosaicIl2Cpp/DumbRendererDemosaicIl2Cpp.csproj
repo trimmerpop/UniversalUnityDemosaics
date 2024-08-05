@@ -125,9 +125,6 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\Lib\BE6 imterop\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\Lib\BE6 imterop\UnityEngine.IMGUIModule.dll</HintPath>
-    </Reference>
     <Reference Include="WasmDisassembler">
       <HintPath>..\Lib\BE6 imterop\WasmDisassembler.dll</HintPath>
     </Reference>

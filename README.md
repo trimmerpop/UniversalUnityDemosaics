@@ -18,7 +18,8 @@ It's plugin for BepInEx. So need BepInEx.
 
 
 About IL2CPP version of BepInEx
-Bleeding Edge builds #6xx ( https://builds.bepinex.dev/projects/bepinex_be )
+Recently, BepInEx Bleeding Edge (BE) builds release #6xx versions. use it.
+BepInEx 6.0.0-pre.1 uses unhollow. but unhollow supports no longer. don't use it.
 
 Tested on
     IL2CPP : Holy Knight Ricca, Succubus Heaven, AiKagura
@@ -76,6 +77,14 @@ Put it on plugins folder(BepInEx \ plugins) and run game, config file is created
 
 
 Changes Log
+v1.4.6.0
+
+    Compatibe with Unity v5.x
+
+v1.4.5.0
+
+    Fixed plugin hide issue. (over Unity 2021.3)
+    Optimized for game speed. (slow decenesor process)
 
 v1.4.5.0
 
